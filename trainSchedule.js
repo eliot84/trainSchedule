@@ -53,7 +53,7 @@ $("#add-train-btn").on("click", function(event) {
 
 database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
-    console.log(childSnapshot.val());
+   // console.log(childSnapshot.val());
 
     // Store everything into a variable.
     var trainName = childSnapshot.val().name;
